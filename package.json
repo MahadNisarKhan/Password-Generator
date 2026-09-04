@@ -1,5 +1,5 @@
 {
-  "name": "password-generator",
+  "name": "security-key-generator",
   "private": true,
   "version": "0.0.0",
   "type": "module",

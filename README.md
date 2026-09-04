@@ -1,6 +1,6 @@
-# 🔐 Password Generator
+# 🔐 Security Key Generator
 
-A clean, responsive password generator built with **React** and **Vite**. Instantly generate secure, random passwords with full control over length and character types.
+A clean, responsive security key generator built with **React** and **Vite**. Instantly generate secure, random security keys with full control over length and character types.
 
 ---
 
@@ -8,9 +8,9 @@ A clean, responsive password generator built with **React** and **Vite**. Instan
 
 - **Adjustable length** — slide or type a value from 4 to 64 characters
 - **Character type toggles** — mix and match uppercase, lowercase, numbers, and symbols
-- **Auto-generation** — password updates instantly whenever any setting changes
-- **One-click copy** — copies the password to your clipboard and highlights it
-- **Auto-resizing display** — the password field grows to fit longer passwords
+- **Auto-generation** — key updates instantly whenever any setting changes
+- **One-click copy** — copies the key to your clipboard and highlights it
+- **Auto-resizing display** — the key field grows to fit longer keys
 
 ---
 
@@ -35,10 +35,10 @@ A clean, responsive password generator built with **React** and **Vite**. Instan
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/password-generator.git
+git clone https://github.com/your-username/Security-Key-Generator.git
 
 # Navigate into the project
-cd password-generator
+cd security-key-generator
 
 # Install dependencies
 npm install
@@ -71,7 +71,7 @@ npm run preview
 ## 📁 Project Structure
 
 ```
-password-generator/
+security-key-generator/
 ├── public/
 ├── src/
 │   ├── assets/
@@ -91,9 +91,9 @@ password-generator/
 
 The core logic lives in `PassGen.jsx`:
 
-- **`useState`** tracks length, character-type toggles, and the generated password.
+- **`useState`** tracks length, character-type toggles, and the generated security key.
 - **`useCallback`** memoizes `generatePassword` so it's only recreated when its dependencies (length, toggles) actually change.
-- **`useEffect`** calls `generatePassword` automatically whenever any setting changes, keeping the displayed password in sync without causing infinite re-renders.
+- **`useEffect`** calls `generatePassword` automatically whenever any setting changes, keeping the displayed key in sync without causing infinite re-renders.
 - The copy button uses the **Clipboard API** (`navigator.clipboard.writeText`) and selects the textarea text for visual feedback.
 
 ---
