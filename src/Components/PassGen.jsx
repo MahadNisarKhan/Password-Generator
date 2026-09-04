@@ -64,12 +64,12 @@ function PassGen() {
   return (
     <>
     <div id="top">
-      <h1>Password Generator</h1>
-      <p> Generate a secure, random password with customizable options.</p>
+      <h1>Security Key Generator</h1>
+      <p> Generate a secure, random key with customizable options.</p>
     </div>
       <div className="container">
         <div className="header">
-          <h1 id="h1">Random Password</h1>
+          <h1 id="h1">Random Security Key</h1>
         </div>
         <div className="password-display">
           <textarea id="password" placeholder="Generated Password" readOnly value={password} ref={textareaRef} />
@@ -105,7 +105,7 @@ function PassGen() {
           </div>
           <div className="generate">
             <button id="generate" onClick={generatePassword}>
-              Generate Password
+              Generate Key
             </button>
           </div>
         </div>
